@@ -93,5 +93,7 @@ iface = gr.Interface(
     outputs=[gr.Image(), gr.Textbox(label="Disease Name"), gr.Textbox(label="Natural Remedies"), gr.Textbox(label="Recommended Pesticides")],
     title="Tomato Disease Detection"
 )
-
-iface.launch()
+iface.launch(
+    server_name="0.0.0.0",
+    server_port=7860
+)
